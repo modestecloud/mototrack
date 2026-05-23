@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>MotoTrack</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>🏍️ MOTOTRACK</h1>
+    <span class="status">● EN LIGNE</span>
+  </header>
+
+  <div id="map"></div>
+
+  <div class="info-bar">
+    <div class="info-box">
+      <div class="label">Vitesse</div>
+      <div class="value" id="speed">0 km/h</div>
+    </div>
+    <div class="info-box">
+      <div class="label">Latitude</div>
+      <div class="value" id="lat">---</div>
+    </div>
+    <div class="info-box">
+      <div class="label">Longitude</div>
+      <div class="value" id="lng">---</div>
+    </div>
+    <div class="info-box">
+      <div class="label">Statut</div>
+      <div class="value" id="statut">Arrêté</div>
+    </div>
+  </div>
+
+  <!-- PANNEAU ALERTES -->
+  <div class="alertes-panel">
+    <h2>🔔 Alertes</h2>
+    <div id="liste-alertes">
+      <div class="alerte alerte-ok">✔ Système démarré — en attente de mouvement</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
